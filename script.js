@@ -23,7 +23,7 @@
 // ];
 let tempData = JSON.parse(localStorage.getItem("tasks")) ?? [];
 
-let lastId = tempData[tempData.length - 1].id ?? 0;
+let lastId = tempData[tempData.length - 1]?.id ?? 0;
 
 // Build todo component
 function BuildTodo(id, title, checked = false){
